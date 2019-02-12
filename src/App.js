@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Card from './card';
 import cat from './cat.jpg';
@@ -11,16 +10,14 @@ import owl from './owl.jpg';
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <Card title={`Cat Uinversity of Sydney`} img src={cat} subTitle={`Student no.7017`}/>
-          <Card title={`Dog Uinversity of Sydney`} img src={dog} subTitle={`Student no.9075`}/>
-          <Card title={`Owl Uinversity of Sydney`} img src={owl} subTitle={`Student no.8727`}/>
-        </header>
+      <div className='highest'>
+          <Card title={`Cat Uinversity of Sydney`} img src={cat} name={'Sherly White'} studentNumber={`7017`} valid={'2019-2021'}/>
+          <Card title={`Dog Uinversity of Sydney`} img src={dog} name={'Oscar Kidman'} studentNumber={`9075`} valid={'2019-2021'}/>
+          <Card title={`Owl Uinversity of Sydney`} img src={owl} name={'Avery Russell'} studentNumber={`8727`} valid={'2019-2021'}/>
       </div>
     );
   }
 }
 
 export default App;
+
